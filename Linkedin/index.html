@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo" ><img src="img/logo.png" ></a>
+
+            <div class="search-box">
+                <img src="img/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="img/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="img/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="img/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="img/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="img/notification.png" alt=""><span>Notifications</span></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="img/my1.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+         <!-- --------------------profile dropdown menu------------ -->
+         <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/my1.png" alt="">
+                    <div>
+                        <h3>V S Sadique</h3>
+                        <a href="profile.html">See Your Profile</a>
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/help.png" alt="">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/display.png" alt="">
+                    <p>Display and Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+         </div>
+
+
+    </nav>
+    <!-- ------ navbar close------------ -->
+
+    <div class="container">
+        <!-- --------------left sidebar--------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/cover-pic.png" width="100%" id="coverPic" alt="">
+                <div class="sidebar-profile-info">
+                    <img src="img/my1.png" alt="">
+                    <h1>V S Sadique</h1>
+                    <h3>Developer</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>1000</span></li>
+                        <li>Your Connections <span>300</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="img/items.png" alt="">My items</a>
+                    <a href="#"><img src="img/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="img/recent.png">Web Development</a>
+                <a href="#"><img src="img/recent.png">User Interface</a>
+                <a href="#"><img src="img/recent.png">Online Learning</a>
+                <a href="#"><img src="img/recent.png">Learn Online</a>
+                <a href="#"><img src="img/recent.png">Code Better</a>
+                <a href="#"><img src="img/recent.png">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="img/group.png">Web Design Group</a>
+                <a href="#"><img src="img/group.png">HTML & Css Learners</a>
+                <a href="#"><img src="img/group.png">Python & Java Script</a>
+                <a href="#"><img src="img/group.png">Learn Coding Online Group</a>
+                <h3>HASHTAGS</h3>
+                <a href="#"><img src="img/hashtag.png">webdevelopment</a>
+                <a href="#"><img src="img/hashtag.png">userinterface</a>
+                <a href="#"><img src="img/hashtag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+                
+            </div>
+
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+        <!-- -----------------main content------------- -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="img/my1.png" alt="">
+                    <textarea rows="2" placeholder="Start a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="img/photo.png" alt="">Photo</li>
+                    <li><img src="img/video.png" alt="">video</li>
+                    <li><img src="img/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div>
+                <div class="sort-by">
+                    <hr>
+                    <p>Sort by: <span>Top <img src="img/down-arrow.png"></span></p>
+                </div>
+            </div>
+            <!-- post1------------------ -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-1.png" alt="">
+                    <div>
+                        <h1>Grace Beverley</h1>
+                        <small>CEO & Founder at TALA & SHREDDY | Forbes 30U30</small>
+                        <small>5d</small>
+                    </div>
+                </div>
+                <p>How To Stand Out From Your Job Application (From An Employer's POV) [SOLO EP].
+
+                    in this week's solo episode we're looking at how to stand out from a job application alone - from the POV of someone who's been going through application after application! i've been hiring a LOT this year and I've learned so much as to what stands out, and what is an absolute no-go, especially in a really competitive market.
+                    </p>
+                    <img src="img/post-image-1.png" width="100%" alt="">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" alt="">
+                            <img src="img/love.png" alt="">
+                            <img src="img/clap.png" alt="">
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>63 comments &middot; 70 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon" alt="">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/like.png"  >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png"  >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/share.png"  >
+                            <span>Repost</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/send.png"  >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------post2--------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-2.png" alt="">
+                    <div>
+                        <h1> Elon Musk</h1>
+                        <small>Owner of lot of company's </small>
+                        <small>4d</small>
+                    </div>
+                </div>
+                <p>"Life is a journey that should never come to a halt; keep moving forward. 🚀 #LifeLessons #KeepMovingForward"
+                    </p>
+                    <img src="img/post-image-2.jpeg" width="100%" alt="">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" alt="">
+                            <img src="img/love.png" alt="">
+                            <img src="img/clap.png" alt="">
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>63 comments &middot; 70 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon" alt="">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/like.png"  >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png"  >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/share.png"  >
+                            <span>Repost</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/send.png"  >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- ---------post3-------------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-3.png" alt="">
+                    <div>
+                        <h1>Brototype</h1>
+                        <small>Educational Platform</small>
+                        <small>3d</small>
+                    </div>
+                </div>
+                <p>Brocamp has achieved 900 PLACEMENTS, positively impacting 900 LIVES! 🔥
+                Yes, We are Shaping Futures! 🔥❤
+                </p>
+                    <img src="img/post-img-3.png" width="100%" alt="">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" alt="">
+                            <img src="img/love.png" alt="">
+                            <img src="img/clap.png" alt="">
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>63 comments &middot; 70 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon" alt="">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/like.png"  >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png"  >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/share.png"  >
+                            <span>Repost</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/send.png"  >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+            <!-- -------------------------post5------------------ -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-4.png" alt="">
+                    <div>
+                        <h1> Michael Akpan</h1>
+                        <small>Tech Founder || Product Management Coach || </small>
+                        <small>6d</small>
+                    </div>
+                </div>
+                <p>🚨When Companies begin to Troll Employees LinkedIn Footprints ...
+
+                    In our modern age, LinkedIn, once a mere platform for job hunting and networking, has transformed into a vital space for personal branding. But the critical question arises: To what extent should a company have a say in how its employees brand themselves online?
+                    
+                    First, let me begin the conversation by talking about Linkedin and Personal Branding.
+                    
+                    </p>
+                    <img src="img/post-image-4.png" width="100%" alt="">
+                    <div class="post-stats">
+                        <div>
+                            <img src="img/thumbsup.png" alt="">
+                            <img src="img/love.png" alt="">
+                            <img src="img/clap.png" alt="">
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>63 comments &middot; 70 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="img/user-1.png" class="post-activity-user-icon" alt="">
+                            <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/like.png"  >
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/comment.png"  >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/share.png"  >
+                            <span>Repost</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="img/send.png"  >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        <!-- ---------------right-sidebar--------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="img/more.png" class="info-icon" alt="">
+                <h3>LinkedIn News</h3>
+                
+                <a href="#">Black Box to hire 500</a>
+                <span>2d ago</span>
+                <a href="#">FMCG firms ride millet wave</a>
+                <span>2d ago</span>
+                <a href="#">Bridging the climate finance gap</a>
+                <span>1d ago</span>
+                <a href="#">More Indians to study abroad</a>
+                <span>2d ago</span>
+                <a href="#">More takers for used smartphones</a>
+                <span>2d ago</span>
+
+                <a href="#" class="read-more-link">Show More</a>
+                    
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the five principles of Web designing</p>
+                <div>
+                    <img src="img/my1.png" alt="">
+                    <img src="img/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy & Terms </a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Business Services </a>
+                <a href="#">Get the LinkedIn app</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="	https://static.licdn.com/aero-v1/sc/h/47josflhxdz9o3v227aa72l1p" alt="">
+                    <p> LinkedIn Corporation © 2023</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+   
+
+    
+<script src="script.js"></script>
+</body>
+</html>
